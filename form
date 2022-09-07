@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+	body{
+		background-position:center;
+		font-family:Times-new-roman;
+		margin-top:40px;
+		margin-left:50px;
+	}
+	label{
+		width:100px;
+		display:inline-block;
+		margin:1px;
+	}
+	#out{
+		width:780px ;
+		background:#00B4D8 ;
+		margin:auto ;
+		border-radius:5px 5px 0px 0px;
+		padding: 1px 0px 1px 0px ;
+	}
+	#form1{
+		border-radius:0px 0px 10px 10px;
+		background:#03045E ;
+		color:white;
+		width:700px ;
+		margin:auto ;
+		padding:40px;
+	}
+	h3{
+		text-align:center;
+		margin-bottom:0px ;
+	}
+	form{
+		padding:10px;
+	}
+	label{
+		padding:2px ;
+	}
+</style>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Project-Form</title>
 </head>
 <body>
+<div id=out><h3>Project Form</h3></div>
+<div id=form1>
 <form>
-	<label for = "n">Project name:</label>
+	<div id=elements>
+	<label for = "n">Project name  :</label>
 	<input type="text" id="n" name="n"><br>
-	<label for="assign">Assigned To:</label>
-	<input type="text" id="assign" name="assign"><br>
-	<label for = "d">Start Date :</label>
+	<label for="assign">Assigned To    :</label>
+	<select class=drop name=assign>
+	<option disabled="disabled" selected ="selected">--choose employee</option>
+	<option>Annie</option>
+	<option>Joe</option>
+	<option>Bob</option>
+	<option>rolex</option>
+	</select><br>
+	<label for = "d">Start Date        :</label>
 	<input type="date" id="d" name="d"><br>
 	<label for = "d1">End Date :</label>
 	<input type="date" id="d1" name="d1"><br>
@@ -25,14 +72,17 @@
 	<input type="text" id="desc" name="desc"><br>
 	<label for="pro">Project Type </label>
 	<input type="checkbox" id="pro" name="sim">
-	<label for="sim">simple</label>
+	<label for="sim">Simple</label>
 	<input type="checkbox" id="pro" name="stand">
 	<label for="stand">Stand Alone</label>
 	<input type="checkbox" id="pro" name="web">
 	<label for="web">Web Based</label>
 	<input type="checkbox" id="pro" name="mob">
 	<label for="mob">Mobile Application</label><br>
-	<input type="submit" value="Submit">
+	<input type="submit" value="Submit" id="submit">
+	<input type="reset" value="Clear" id="reset">
+	</div>
 </form>
+</div>
 </body>
 </html>
