@@ -2,37 +2,129 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Project-Form</title>
+<style type="text/css">
+	body{
+		background-position:center;
+		font-family:Times-new-roman;
+		margin-top:40px;
+		margin-left:50px;
+	}
+	label{
+		width:100px;
+		display:inline-block;
+		margin:10px;
+		text-align: right ;
+		padding: 2px;
+	}
+	#out{
+		width:780px ;
+		background:#002e4d;
+		margin:auto ;
+		border-radius:5px 5px 0px 0px;
+		padding: 1px 0px 1px 0px ;
+	}
+	#form1{
+		border-radius:0px 0px 10px 10px;
+		background:#001f33 ;
+		color:white;
+		width:700px ;
+		margin:auto ;
+		padding:40px;
+	}
+	h2{
+		text-align:center;
+		margin-bottom:0px ;
+		color: white;
+	}
+	#submit{
+		padding : 4px;
+		width: 80px;
+		background-color : white;
+		color : black;
+		font-family: Times-new-roman;
+		margin-top : 40px;
+	}
+	#reset{
+		padding : 4px;
+		width: 50px;
+		background-color : white;
+		color : black;
+		font-family: Times-new-roman;
+		margin-top : 40px;
+		margin-left: 500px;
+	}
+	input[type=text]{
+		border : 2px solid black ;
+		border-radius : 4px;
+		padding : 10px;
+	}
+	input[type=date]{
+		border : 2px solid black;
+		border-radius : 4px;
+		padding : 5px;
+	}
+	.drop{
+		margin-left: 1px;
+		border : 2px white;
+		border-radius : 4px;
+		padding : 5px;
+	}
+	#desc{
+		padding: 20px;
+		border : 2px solid black;
+		border-radius : 4px;
+		resize:none;
+		background-color :white ;
+	}
+	.drop{
+		border : 2px solid black ;
+		border-radius : 4px;
+		padding : 10px;
+	}
+</style>
 </head>
 <body>
+<div id=out><h2>Project Management</h2></div>
+<div id=form1>
 <form>
-	<label for = "n">Project name:</label>
-	<input type="text" id="n" name="n"><br>
-	<label for="assign">Assigned To:</label>
-	<input type="text" id="assign" name="assign"><br>
+	<div class=elements>
+	<label for = "n">Project name :</label>
+	<input type="text" id="n" name="n" placeholder="Enter Name"><br>
+	<label for="assign">Assigned To :</label>
+	<select class=drop name="assign" id="assign">
+	<option disabled="disabled" selected ="selected">--choose employee</option>
+	<option>Annie</option>
+	<option>Joe</option>
+	<option>Bob</option>
+	<option>rolex</option>
+	</select><br>
 	<label for = "d">Start Date :</label>
-	<input type="date" id="d" name="d"><br>
+	<input type="date" id="d" name="d" placeholder="dd-mm-yyyy"><br>
 	<label for = "d1">End Date :</label>
-	<input type="date" id="d1" name="d1"><br>
+	<input type="date" id="d1" name="d1" placeholder="dd-mm-yyyy"><br>
 	<label for = "pri">Priority :</label>
-	<input type="radio" id="pri" name="pri" value="High">
-	<label for="r1">High</label>
-	<input type="radio" id="pri" name="pri" value="avg">
-	<label for="r2">Average</label>
-	<input type="radio" id="pri" name="pri" value="low">
-	<label for="r3">Low</label><br>
+	<label>High</label>
+	<input type="radio" name="pri">
+	<label>Average</label>
+	<input type="radio" name="pri">
+	<label>Low</label>
+	<input type="radio" name="pri"><br> 
 	<label for="desc">Description :</label>
-	<input type="text" id="desc" name="desc"><br>
-	<label for="pro">Project Type </label>
-	<input type="checkbox" id="pro" name="sim">
-	<label for="sim">simple</label>
-	<input type="checkbox" id="pro" name="stand">
-	<label for="stand">Stand Alone</label>
-	<input type="checkbox" id="pro" name="web">
-	<label for="web">Web Based</label>
-	<input type="checkbox" id="pro" name="mob">
-	<label for="mob">Mobile Application</label><br>
-	<input type="submit" value="Submit">
+	<input type="text" id="desc" name="desc" placeholder="Project Description"><br>
+	<label for="pro">Project Type : </label>
+	<label>Simple</label>
+	<input type="checkbox" name="sim">
+	<label>Stand Alone</label>
+	<input type="checkbox" name="stand"><br>
+	<label for="web" style="margin-left:140px;">Web Based</label>
+	<input type="checkbox" name="web">
+	<label for="mob">Mobile Application</label>
+	<input type="checkbox" id="mob" name="mob"><br>
+	<input type="reset" value="Clear" id="reset" style="border:2px solid black; border-radius:1px; background:white;">
+	<input type="submit" value="Submit" id="submit" style="border:2px solid black; border-radius:1px; background:white;">
+	</div>
 </form>
+</div>
 </body>
 </html>
