@@ -1,10 +1,102 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> HTML Tags </title>
+	<meta charset="ISO-8859-1">
+	<title>WebTechnology</title>
+	<link rel="html" href = "form.html">
+		<style>
+		.title{
+			top:0%;
+			left:0%;
+			height:10%;
+			width:100%;
+			background:#3aaff2;
+			position:absolute;
+		}
+		.left{
+			left:0%;
+			top:10%;
+			width:20%;
+   			height:100%;
+    		background:#8ef5f5;
+    		position:absolute;
+		}
+
+		.middle{
+			left:20%;
+			top:10%;
+			width:60%;
+			height:100%;
+			background:white;
+			position:absolute;
+		}
+		.right{
+			left:80%;
+			right:0%;
+			top:10%;
+			width:20%;
+			height:100%;
+			background:#7ceef2;
+			position:absolute;
+		}
+
+		h2{text-align:center;}
+	</style>
 </head>
 <body>
-<h2> HTML : </h2>
-<p> HTML stands for Hyper Text Markup Language </p>
-<div class ="bar" style ="top :10px;">page spliting part</div>
+	<div class="title">
+	<h2>WEB TECHNOLOGY LAB</h2>
+	</div>
+
+	<div class="left">
+	<h4 style="text-align:center;">Index</h4>
+	<div id="ex">
+	<p>exercise:1</p>
+	<ul>
+		<li><a href="#list">List</a></li>
+		<li><a href="#table">Table</a></li>
+  		<li><a href="#hotspot">Hotspot</a></li>
+  		<li><a href="#audio">Audio</a></li>
+  		<li><a href="#video">video</a></li>
+  		<li><a href="#form">Form</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="middle">
+	<h4 style="text-align:center;">center</h4>
+	
+  	<div class="hotspot">
+  		<img src="C:\Users\ELCOT\eclipse-workspace1\web lab\src\main\webapp\WEB-INF\moon.jpg"></img>
+  	</div>
+  	
+  	<div id ="list">
+  		<h2>Musical Instruments</h2>
+  			<p>String Instruments</p>
+  			<ol>
+  				<li>Violin</li>
+  				<li>Guitar</li>
+  				<li>Harp</li>
+  			</ol>
+  			
+  			<p>Wind Instruments</p>
+  			<ol>
+  				<li>Flute</li>
+  				<li>Clarinet</li>
+  				<li>Trumpet</li>
+  			</ol>
+  	</div>
+  	
+  	<div id="form">
+  		
+  	</div>
+  	
+  	
+	</div>
+
+	<div class="right">
+	<h4 style="text-align:center;">Description</h4>
+	</div>
+
 </body>
 </html>
